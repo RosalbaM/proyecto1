@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+			<head>
+	     <title>REGISTRO</title>
+	     <meta charset="UTF-8">
+	     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+       <!-- vinculo a bootstrap -->
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+       <!-- Temas-->
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+       <link rel="stylesheet" type="text/css" href="./css/estiloR.css">
+			</head>
+    		<body>
+          <div class="main">
+   	        <div class="one">
+             <div class="register">
+              <h3>Crea tu cuenta</h3>
+                <form  action="registrar.php" method="post" id="reg-form">
+                  <div>
+
+
+                      <label for="nombre">Nombre</label>
+                      <input type="text" id="nombre" name="nombre" spellcheck="false" placeholder="" required=""/>
+                  </div>
+                  <div>
+                      <label for="paterno">Apellido Paterno</label>
+                      <input type="text" id="paterno" name="paterno" spellcheck="false" placeholder="" required="" />
+                  </div>
+                  <div>
+                      <label for="materno">Apellido Materno</label>
+                      <input type="text" id="materno" name="materno" spellcheck="false" placeholder="" required=""/>
+                  </div>
+                  <div>
+                      <label for="direccion">Dirección</label>
+                      <input type="text" id="direccion" name="direccion" spellcheck="false" placeholder=""  required=""/>
+                  </div>
+                  <div>
+                      <label for="telefono">Telefono</label>
+                      <input type="text" id="telefono" name="telefono" spellcheck="false" placeholder="" required="" />
+                  </div>
+                  <div>
+                      <label for="correo">Correo</label>
+                      <input type="text" id="correo" name="correo" spellcheck="false" placeholder="" required=""/>
+                  </div>
+                  <div>
+                      <label for="contraseña">Password</label>
+                      <input type="password" id="contraseña" name="contraseña" required="" />
+                  </div>
+                  <div>
+                      <label></label>
+                      <input type="submit" value="Crear Cuenta" id="create-account" class="button" />
+                  </div>
+                      <div class="regresa"><a href="LoginC.html">INICIA SESIÓN</a></div>
+                </form>
+             </div>
+           </div>
+         </div>
+       </body>
+			<!-- vinculando a libreria Jquery-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <!-- Libreria java scritp de bootstrap -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</html>

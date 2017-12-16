@@ -1,0 +1,67 @@
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+}
+
+.acme{
+  font-family: 'Acme', sans-serif;
+}
+
+.form-registro{
+  width: 95%;
+  max-width: 800px;
+  margin:auto;
+  background: white;
+  border-radius: 7px;
+}
+
+.form-titulo{
+  background: #DD6C2B;
+  padding: 20px;
+  color: #FFDE17;
+  text-align: center;
+  font-size: 30px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  border-bottom: 5px solid crimson;
+}
+
+.contenedor-inputs{
+  padding: 10px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.input-50{
+  width: 50%;
+}
+
+.input-60{
+  width: 60%;
+}
+
+input{
+  margin-bottom: 15px;
+  padding: 15px;
+  font-size: 12px;
+  border-radius: 3px;
+  border: 1px solid gray;
+}
+
+.boton-registrar{
+  margin: auto;
+  padding: 10px 40px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.card{
+  border-radius: 4px;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
