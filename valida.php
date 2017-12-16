@@ -10,8 +10,8 @@ $consulta = "SELECT if((correo=? AND passwd=?),true,false) as login FROM cliente
 $statement=$conexion->prepare($consulta);
 $statement->bind_param("ss",$correo,$passwd);
 $statement->execute();
-$stmt->bind_result($resultado);
-$stmt->fetch();
+$statement->bind_result($resultado);
+$statement->fetch();
 
 
 if($resultado)
@@ -23,8 +23,8 @@ else
     echo "Correo o contraseña incorrectos";
 }
 
-mysqli_free_result($resultado);
-mysqli_close($conexion);
+$resultado->close();
+$conexion->close();
 
 
 ?>
