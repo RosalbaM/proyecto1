@@ -23,7 +23,7 @@ else
     echo "Correo o contraseña incorrectos";
 }
 
-$resultado->close();
+$statement->close();
 $conexion->close();
 
 
