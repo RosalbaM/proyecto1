@@ -1,5 +1,6 @@
 <?php
-
+if(isset($_POST['correo'])&&isset($_POST['passwd'])){
+    
 include("conexion.php");
 
 $correo = $_POST['correo'];
@@ -25,6 +26,9 @@ else
 
 $statement->close();
 $conexion->close();
-
+}
+else{
+    echo "location: login_cliente.html";
+}
 
 ?>
