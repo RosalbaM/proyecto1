@@ -3,19 +3,24 @@
 include("conexion.php");
 
 $correo = $_POST['correo'];
-$contraseña = $_POST['contraseña'];
+$passwd = $_POST['passwd'];
 
-$consulta = "SELECT * FROM cliente WHERE correo = '$correo' AND contraseña = '$contraseña'";
+$consulta = "SELECT if((correo=? AND passwd=?),true,false) as login FROM cliente";
 
-$resultado = mysqli_query($conexion,$consulta);
-$filas = mysqli_num_rows($resultado);
+$statement=$conexion->prepare($consulta);
+$statement->bind_param("ss",$correo,$passwd);
+$statement->execute();
+$stmt->bind_result($resultado);
+$stmt->fetch();
 
-if($filas == 0 ){
-  echo "Correo o contraseña incorrectos";
-}else{
-  if($filas == 1){
+
+if($resultado)
+{
     header("location: productos.html");
-  }
+}
+else
+{
+    echo "Correo o contraseña incorrectos";
 }
 
 mysqli_free_result($resultado);
